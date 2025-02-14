@@ -19,5 +19,8 @@ func TestDivide(t *testing.T) {
 	if Divide(10,5) != 2 {
 		t.Errorf("Divide(10,2) = %d; want 5 testcase 4", vot)
 	}
+	if Divide(22,2) != 11 {
+		t.Errorf("Divide(10,2) = %d; want 5 testcase 4", vot)
+	}
 
 }
