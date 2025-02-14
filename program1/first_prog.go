@@ -2,10 +2,7 @@ package main
 
 import (
 	"fmt"
-	// "~/golang/practice_session/usefullib"
-	"../usefullib"
-	// "usefillib"
-	// "/home/sujay-pt7892/golang/practice_session/usefullib"
+	"project-layout/usefullib"
 )
 
 func main() {
