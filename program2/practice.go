@@ -12,9 +12,7 @@ func main() {
 	// read()
 	// splits()
 	// fmt.Println(iterate(1, 10))
-
-	// arr := []int{1, 2, 3, 4, 5}
-	// array := new ([5]int)
+	array_operations()
 }
 
 func read() {
@@ -52,4 +50,18 @@ func iterate(fir int, sec int) int {
 		fmt.Println(string(count[i]))
 	}
 	return 0
+}
+
+func array_operations(){
+	arr := []int{1, 2, 3, 4, 5}
+	second_arr := []int{8,9,0}
+	fmt.Println(arr)
+	fmt.Println(arr[0])
+	fmt.Println(arr[1:3])
+	fmt.Println(arr[:3])
+	fmt.Println(arr[2:])
+	fmt.Println(len(arr))
+	fmt.Println(cap(arr))
+	val := append(arr,second_arr...) //spread operator 
+	fmt.Println(val)
 }
