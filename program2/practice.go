@@ -6,13 +6,11 @@ import (
 )
 
 func main() {
-	// v := 5
-	// fmt.Println(v)
 
 	// read()
 	// splits()
 	// fmt.Println(iterate(1, 10))
-	array_operations()
+	// array_operations()
 
 	climbing_stairs()
 }
@@ -29,6 +27,7 @@ func splits() {
 	s := "Hello, World!     hos aa     aa a    ksdf    "
 	// fmt.Println(s)
 	arr := strings.Fields(s)
+    // arr = strings.Split(s, " ")
 	// arr = strings.Split(string(arr), " ")
 	fmt.Println(arr)
 	fmt.Println(len(arr))
@@ -49,7 +48,7 @@ func iterate(fir int, sec int) int {
 
 	count := "stringa"
 	for i := 0; i < len(count); i++ {
-		fmt.Println(string(count[i]))
+		fmt.Println(string(count[i])) //if we dont convert it to string it will print ascii value
 	}
 	return 0
 }
