@@ -13,6 +13,8 @@ func main() {
 	// splits()
 	// fmt.Println(iterate(1, 10))
 	array_operations()
+
+	climbing_stairs()
 }
 
 func read() {
@@ -64,4 +66,15 @@ func array_operations(){
 	fmt.Println(cap(arr))
 	val := append(arr,second_arr...) //spread operator 
 	fmt.Println(val)
+}
+
+func climbing_stairs() int{
+	val := 5
+	arr := make([]int, val+1)
+	arr[val-1]  = 1;
+	for i:=val-2; i>=0; i--{
+		arr[i] = arr[i+1] + arr[i+2] 
+	}
+	fmt.Println(arr)
+	return arr[0] + arr[1] 
 }
