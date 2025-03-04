@@ -6,13 +6,37 @@ import (
 )
 
 func main() {
-
+	if_else()
 	// read()
 	// splits()
 	// fmt.Println(iterate(1, 10))
 	// array_operations()
+	switch_case()
+	// climbing_stairs()
+}
+func switch_case() {
+	val := 10
+	switch val {
+	case 1:
+		fmt.Println("Value is 1")
+	case 2:
+		fmt.Println("Value is 2")
+	case 3:
+		fmt.Println("Value is 3")
+	default:
+		fmt.Println("Value is not 1, 2 or 3")
+	}
+}
 
-	climbing_stairs()
+func if_else() {
+	val := 10
+	if val > 10 {
+		fmt.Println("Value is greater than 10")
+	} else if val < 10 {
+		fmt.Println("Value is less than 10")
+	} else {
+		fmt.Println("Value is 10")
+	}
 }
 
 func read() {
