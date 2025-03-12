@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	if_else()
+	// if_else()
 	// read()
 	// splits()
 	// fmt.Println(iterate(1, 10))
 	// array_operations()
-	switch_case()
+	// switch_case()
 	// climbing_stairs()
 }
 func switch_case() {

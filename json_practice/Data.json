@@ -1,0 +1,34 @@
+{
+   "person": {
+      "PersonName": "sujay",
+      "Gender": "M",
+      "Age": 21
+   },
+   "Books": [
+      {
+         "BookName": "1",
+         "Title": "a",
+         "Genre": "genre1"
+      },
+      {
+         "BookName": "2",
+         "Title": "b",
+         "Genre": "genre2"
+      },
+      {
+         "BookName": "3",
+         "Title": "c",
+         "Genre": "genre3"
+      },
+      {
+         "BookName": "4",
+         "Title": "d",
+         "Genre": "genre4"
+      },
+      {
+         "BookName": "5",
+         "Title": "e",
+         "Genre": "genre5"
+      }
+   ]
+}

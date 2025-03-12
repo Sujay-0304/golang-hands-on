@@ -43,7 +43,7 @@ func Append_file(){
 		return
 	} 
 	defer file.Close()
-	bytes, err := file.WriteString("\nyo yo pudichadu nan than\n")
+	bytes, err := file.WriteString("\nsomething..\n")
 	fmt.Println(err)
 
 	if err != nil {

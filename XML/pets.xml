@@ -1,0 +1,22 @@
+<pets>
+   <pet>
+      <animal>
+         <animal_name>Dog</animal_name>
+         <AnimalBreed>Labrador</AnimalBreed>
+      </animal>
+      <personal>
+         <FavouriteFood>Pedigree</FavouriteFood>
+         <shop></shop>
+      </personal>
+   </pet>
+   <pet>
+      <animal>
+         <animal_name>cat</animal_name>
+         <AnimalBreed></AnimalBreed>
+      </animal>
+      <personal>
+         <FavouriteFood>Whiskers</FavouriteFood>
+         <shop></shop>
+      </personal>
+   </pet>
+</pets>
