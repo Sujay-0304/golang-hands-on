@@ -1,19 +1,19 @@
 <pets>
    <pet>
-      <animal>
+      <Animal>
          <animal_name>Dog</animal_name>
          <AnimalBreed>Labrador</AnimalBreed>
-      </animal>
+      </Animal>
       <personal>
          <FavouriteFood>Pedigree</FavouriteFood>
          <shop></shop>
       </personal>
    </pet>
    <pet>
-      <animal>
+      <Animal>
          <animal_name>cat</animal_name>
          <AnimalBreed></AnimalBreed>
-      </animal>
+      </Animal>
       <personal>
          <FavouriteFood>Whiskers</FavouriteFood>
          <shop></shop>

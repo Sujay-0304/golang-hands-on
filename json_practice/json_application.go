@@ -32,7 +32,9 @@ type AutherBookStore struct {
 // }
 func main(){
 	fmt.Println()
-	createJson()
+	createJson() 
+	// loadJSON()
+
 }
 
 func createJson(){
@@ -52,15 +54,53 @@ func createJson(){
 		return 
 	}
 	fmt.Println(string(file)) 
-	saveJSON(file)
-	
+	// saveJSON_OS(file)
+	saveJSON_ENCODER(bookStore)
+
+	for ind,books := range bookStore.Books{
+		fmt.Println(ind + 1) 
+		fmt.Println("book genre:", books.Genre) 
+	}
 }
 
-func saveJSON(data []byte){
+func saveJSON_OS(data []byte){
 	err := os.WriteFile("Data.json",data,0644) 
 	if err != nil{
 		fmt.Println("there is a problem in creating the file.. in Save JSON")
 		return
 	}
+
+}
+func saveJSON_ENCODER(bookStore AutherBookStore){
+	file,err := os.Create("encoder.json")
+	defer file.Close() 
+	if err != nil{
+		return 
+	}
+
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("","  ") 
+	encoder.Encode(bookStore) 
+	
+}
+
+func loadJSON(){ 
+	file,err := os.OpenFile("Data.json", os.O_RDONLY , 0644)
+	if err != nil {
+		fmt.Println("file has error while opening")
+	} 
+	defer file.Close()
+
+	decoder := json.NewDecoder(file) 
+	var bookstore AutherBookStore
+	errors := decoder.Decode(&bookstore)
+	if errors != nil {
+		return 
+	}
+
+	fmt.Println("in loadJson")
+	// fmt.Println(bookstore) 
+	formatedJSON,err := json.MarshalIndent(bookstore,"","    ")
+	fmt.Println(string(formatedJSON)) 
 
 }

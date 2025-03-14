@@ -21,20 +21,20 @@ import (
 // pets
 
 type Animal struct {
-	XMLName     xml.Name `xml:"animal"`
+	XMLName     xml.Name 
 	AnimalName  string   `xml:"animal_name"`
 	AnimalBreed string   `xml:"AnimalBreed"`
 }
 
 type Personal struct {
-	XMLName       xml.Name `xml:"personal"`
+	XMLName       xml.Name `xml:"personal"` 
 	FavouriteFood string   `xml:"FavouriteFood"`
 	Shop          string   `xml:"shop"`
 }
 
 type Pet struct {
 	XMLName  xml.Name `xml:"pet"`
-	Animal   Animal   `xml:"animal"`
+	Animal   Animal   
 	Personal Personal `xml:"personal"`
 }
 
