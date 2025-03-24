@@ -15,6 +15,7 @@ func main() {
     http.HandleFunc("/notfound", NotFound) 
     http.HandleFunc("/servefile", sendFile)
     fmt.Println("server started at:", localHost)
+    
     http.ListenAndServe(":3000", nil) 
 }
 func Get(w http.ResponseWriter , r *http.Request){
@@ -25,14 +26,15 @@ func Get(w http.ResponseWriter , r *http.Request){
     }
     // defer resp.Body.Close() 
     body, _ := io.ReadAll(resp.Body)
-    fmt.Fprintln(w, string(body))
+    // fmt.Println(body) 
+    fmt.Fprintln(w, string(body)) 
 }
 func sendFile(w http.ResponseWriter , r *http.Request){
     http.ServeFile(w,r,"index.html")
 }
 func Redirect(w http.ResponseWriter , r *http.Request){
         // fmt.Fprintf(w, "this is the redirect file")
-        http.Redirect(w,r,"get", 200)
+        http.Redirect(w,r,"get", 404)
 }
 func NotFound(w http.ResponseWriter,  r *http.Request) { 
     http.NotFound(w,r) 

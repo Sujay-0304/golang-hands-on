@@ -7,7 +7,7 @@ import (
 )
 
 type Book struct {
-	BookName string `json:"BookName"`
+	BookName string `json:"BookName"` 
 	Title string `json:"Title"` 
 	Genre string `json:"Genre"` 
 } 
@@ -81,7 +81,6 @@ func saveJSON_ENCODER(bookStore AutherBookStore){
 	encoder := json.NewEncoder(file)
 	encoder.SetIndent("","  ") 
 	encoder.Encode(bookStore) 
-	
 }
 
 func loadJSON(){ 

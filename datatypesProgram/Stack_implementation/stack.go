@@ -21,14 +21,14 @@ func (s *Stack) pop() int {
 	return val
 }
 
-func (s *Stack) peek() int {
+func (s Stack) peek() int {
 	if(len(s.stack) == 0){
 		return -1
 	} 
 	return s.stack[len(s.stack) - 1]
 }
 
-func (s *Stack) displayStack(){
+func (s Stack) displayStack(){
 	for i := 0; i < len(s.stack); i++ {
 		fmt.Print(s.stack[i], " ")
 	}

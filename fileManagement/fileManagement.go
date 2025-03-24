@@ -7,10 +7,10 @@ import (
 )
 
 func main(){
-	// Read_file()
+	Read_file()
 	// Create_file()
 	// Append_file() 
-	ReplaceContents()
+	// ReplaceContents()
 }
 
 func Read_file(){
