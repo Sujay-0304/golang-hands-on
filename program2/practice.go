@@ -10,8 +10,8 @@ func main() {
 	// read()
 	// splits()
 	// fmt.Println(iterate(1, 10))
-	// slice_operations()  
-	map_operations() 
+	slice_operations()  
+	// map_operations() 
 	// switch_case()
 	// i,j := climbing_stairs()
 	// fmt.Print(i , j) 
@@ -94,30 +94,32 @@ func iterate(fir int, sec int) int {
 }
 
 func slice_operations(){
-	arr := [5]int{1, 2, 3, 4, 5}
-	slice := arr[2:3] 
-	fmt.Println(slice) 
-	second_arr := []int{8,9,0}
-	third_arr := make([]int, 3,5) // 3  cap 5  1 1 1  (3) 1 1 1 1 (8)
-	
+	// arr := [5]int{1, 2, 3, 4, 5}
+	// slice := arr[2:3] 
+	// fmt.Println(slice) 
+	// second_arr := []int{8,9,0}
+	third_arr := make([]int, 5) // 3  cap 5  1 1 1  (3) 1 1 1 1 (8)
 
-	third_arr = append(third_arr,second_arr...) 
+	third_arr = append(third_arr,1,2,3,4,5,4) 
+	third_arr[2] = 7
 	fmt.Println(third_arr) 
+	fmt.Println(len(third_arr))
+	fmt.Println(cap(third_arr))  
 
 	// fmt.Println(arr)
 	// fmt.Println(arr[0])
 	// fmt.Println(arr[1:3])
 	// fmt.Println(arr[:3])
 	// fmt.Println(arr[2:])
-	fmt.Println(len(arr))
-	fmt.Println(cap(arr))
+	// fmt.Println(len(arr))
+	// fmt.Println(cap(arr))
 	// val := append(arr,second_arr...) //spread operator 
 	// fmt.Println(val)
-	slice2 := make([]int, 5) 
-	slice2 = append(slice2, 9,8) 
-	fmt.Println(slice2) 
-	slice2[1] = 7 
-	fmt.Println(slice2) 
+	// slice2 := make([]int, 5) 
+	// slice2 = append(slice2, 9,8) 
+	// fmt.Println(slice2) 
+	// slice2[1] = 7 
+	// fmt.Println(slice2) 
 
 }
 
